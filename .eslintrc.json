@@ -1,48 +1,48 @@
 {
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": "./tsconfig.json",
-    "sourceType": "module"
-  },
-  "plugins": ["@typescript-eslint"],
-  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-  "rules": {
-    "@typescript-eslint/no-var-requires": "error",
-    "@typescript-eslint/no-explicit-any": "error",
-    "@typescript-eslint/promise-function-async": "error",
-    "@typescript-eslint/await-thenable": "error",
-    "curly": "error",
-    "@typescript-eslint/prefer-for-of": "error",
-    "no-console": ["error", { "allow": ["warn", "info"] }],
-    "no-debugger": "error",
-    "no-duplicate-case": "error",
-    "no-template-curly-in-string": "error",
-    "@typescript-eslint/no-misused-new": "error",
-    "no-return-await": "error",
-    "no-shadow": "error",
-    "no-fallthrough": "error",
-    "@typescript-eslint/no-unnecessary-condition": "error",
-    "no-var": "error",
-    "@typescript-eslint/no-this-alias": "error",
-    "default-case": "error",
-    "eqeqeq": "off",
-    "@typescript-eslint/no-require-imports": "off",
-    "prefer-const": "error",
-    "arrow-body-style": ["error", "as-needed"],
-    "max-len": ["error", { "code": 120 }],
-    "no-trailing-spaces": "off",
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"],
-    "comma-dangle": ["error", "never"],
-    "indent": ["error", "tab"],
-    "object-curly-spacing": ["error", "always"]
-  },
-  "overrides": [
-    {
-      "files": ["*.d.ts"],
-      "rules": {
-        "no-unused-vars": "off"
-      }
-    }
-  ]
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": "./tsconfig.json",
+		"sourceType": "module"
+	},
+	"plugins": ["@typescript-eslint"],
+	"extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+	"rules": {
+		"@typescript-eslint/no-var-requires": "error",
+		"@typescript-eslint/no-explicit-any": "error",
+		"@typescript-eslint/promise-function-async": "error",
+		"@typescript-eslint/await-thenable": "error",
+		"curly": "error",
+		"@typescript-eslint/prefer-for-of": "error",
+		"no-console": ["error", { "allow": ["warn", "info"] }],
+		"no-debugger": "error",
+		"no-duplicate-case": "error",
+		"no-template-curly-in-string": "error",
+		"@typescript-eslint/no-misused-new": "error",
+		"no-return-await": "error",
+		"no-shadow": "error",
+		"no-fallthrough": "error",
+		"@typescript-eslint/no-unnecessary-condition": "error",
+		"no-var": "error",
+		"@typescript-eslint/no-this-alias": "error",
+		"default-case": "error",
+		"eqeqeq": "off",
+		"@typescript-eslint/no-require-imports": "off",
+		"prefer-const": "error",
+		"arrow-body-style": ["error", "as-needed"],
+		"max-len": ["error", { "code": 120 }],
+		"no-trailing-spaces": "off",
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		// "comma-dangle": ["error", "never"],
+		"indent": ["error", "tab"],
+		"object-curly-spacing": ["error", "always"]
+	},
+	"overrides": [
+		{
+			"files": ["*.d.ts"],
+			"rules": {
+				"no-unused-vars": "off"
+			}
+		}
+	]
 }
